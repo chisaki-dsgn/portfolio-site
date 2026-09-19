@@ -1,0 +1,44 @@
+@use 'variables' as *;
+
+// タグ指定共通スタイル
+body{
+    scroll-behavior: smooth;
+    background-color: $color-bg-main;
+    font-size: rem(14);
+    color: $color-text-main;
+    font-family: "Poiret One", "Noto Sans JP", sans-serif;
+    @include mq{
+        font-size: rem(16);
+    }
+}
+main{
+    padding-top: 70px;
+    @include mq{
+        padding-top: 80px;
+    }
+}
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+// クラス指定共通スタイル
+.l-main{
+    padding-top: calc($spacing-sp-lg + 70px);
+    padding-bottom: $spacing-sp-lg;
+    @include mq{
+        padding-top: calc($spacing-pc-lg + 80px);
+        padding-bottom: $spacing-pc-lg;
+    }
+}
+.l-section{
+    padding-block: $spacing-sp-md;
+    @include mq{
+        padding-block: $spacing-pc-md;
+    }
+}
+.l-inner{
+    width: min(100%, 1080px);
+    padding-inline: rem(16);
+}

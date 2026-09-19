@@ -1,0 +1,19 @@
+/* Error: @use rules must be written before any other rules.
+ *    ,
+ * 10 | @use 'sass:math';
+ *    | ^^^^^^^^^^^^^^^^
+ *    '
+ *   assets\scss\base\_variables.scss 10:1  @use
+ *   assets\scss\base\_base.scss 1:1        @use
+ *   assets\scss\style.scss 3:1             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: @use rules must be written before any other rules.\a    \2577 \a 10 \2502  @use 'sass:math';\d\a    \2502  ^^^^^^^^^^^^^^^^\a    \2575 \a   assets\\scss\\base\\_variables.scss 10:1  @use\a   assets\\scss\\base\\_base.scss 1:1        @use\a   assets\\scss\\style.scss 3:1             root stylesheet";
+}
