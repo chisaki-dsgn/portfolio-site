@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+$bp: 768px;
+@mixin mq{
+    @media(min-width:($bp)){
+    @content;
+    }
+}
+
+@use 'sass:math';
+// pxをremに変換する関数
+@function rem($px, $base:16){
+    @return math.div($px, &base) * 1rem;
+}
+
+// テーマカラー
+$color-theme-main: #778da9;
+$color-theme-sub: #d4d8df;
+$color-theme-accent: #f4d068;
+$color-theme-base: #fdfcf8;
+// テキストカラー
+$color-text-main: #1b263b;
+$color-text-sub: #777;
+$color-text-inverse: #fdfcf8;
+// 背景色
+$color-bg-main: #fdfcf8;
+$color-bg-sub: #fff;
+
+// スペーシング
+$spacing-pc-lg: 160px;
+$spacing-pc-md: 80px;
+$spacing-pc-sm: 60px;
+
+$spacing-sp-lg: 100px;
+$spacing-sp-md: 60px;
+$spacing-sp-sm: 40px;
+
+// フォント
+$font-family-en: 'pioret one', sans-serif;
+$font-family-ja: 'noto sans jp', sans-serif;
+$line-height-base: 1.5;
+$line-height-wide: 1.7;
+$line-height-tight: 1;
+
+
