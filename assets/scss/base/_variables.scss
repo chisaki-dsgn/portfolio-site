@@ -1,4 +1,5 @@
 @charset "utf-8";
+@use 'sass:math';
 
 $bp: 768px;
 @mixin mq{
@@ -7,10 +8,9 @@ $bp: 768px;
     }
 }
 
-@use 'sass:math';
 // pxをremに変換する関数
 @function rem($px, $base:16){
-    @return math.div($px, &base) * 1rem;
+    @return math.div($px, $base) * 1rem;
 }
 
 // テーマカラー
