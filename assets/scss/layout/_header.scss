@@ -24,7 +24,7 @@
         width: 30px;
         height: 30px;
         position: relative;
-        &-line{
+        .l-header__hamburger-line{
             width: 100%;
             height: 2px;
             background-color: $color-text-inverse;
@@ -38,7 +38,7 @@
             }
         }
         &.is-active{
-            &-line{
+            .l-header__hamburger-line{
                 &:first-child{
                     translate: 0 7px;
                     rotate: 135deg;
