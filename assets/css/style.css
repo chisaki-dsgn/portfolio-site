@@ -293,6 +293,7 @@ img {
   width: 100%;
   height: 100dvh;
   position: relative;
+  background-color: #d4d8df;
 }
 .p-top__title {
   position: absolute;
