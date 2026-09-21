@@ -20,3 +20,58 @@
         }
     }
 }
+
+// worksセクション
+.p-top-works{
+    padding-top: $spacing-sp-lg;
+    @include mq{
+        padding-top: $spacing-pc-lg;
+    }
+    &__list{
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: $color-theme-sub;
+        margin-bottom: $spacing-sp-sm;
+        display: flex;
+        justify-content: safe center ;
+        padding: 10px;
+        gap: rem(24);
+        @include mq{
+            margin-bottom: $spacing-pc-sm;
+        }
+    }
+    &__list-item{
+        width: 220px;
+        padding: rem(10);
+        border-radius: 5px;
+        box-shadow: 0 0 5px #c9c9c9;
+        flex-shrink: 0;
+        transition: scale .3s ease;
+        &:hover{
+            scale: 1.05;
+        }
+    }
+    &__card{
+        display: block;
+        &-img{
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            margin-bottom: rem(16);
+        }
+        &-title{
+            font-size: rem(16);
+            margin-bottom: rem(16);
+            @include mq{
+                font-size: rem(20);
+            }
+        }
+        &-category{
+            display: inline-block;
+            padding: 3px 5px;
+            font-family: $font-family-ja;
+            color: $color-text-sub;
+            background-color: $color-theme-sub;
+            border-radius: 5px;
+        }
+    }
+}
