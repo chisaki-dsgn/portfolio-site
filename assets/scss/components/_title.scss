@@ -1,16 +1,21 @@
+@use '../base/variables' as *;
 
 .c-section-title{
     font-size: rem(36);
     text-align: center;
+    margin-bottom: $spacing-sp-sm;
     @include mq{
         font-size: rem(64);
+        margin-bottom: $spacing-pc-sm;
     }
 }
 
 .c-page-title{
     font-size: rem(64);
     text-align: center;
+    margin-bottom: $spacing-sp-sm;
     @include mq{
         font-size: rem(165);
+        margin-bottom: $spacing-pc-sm;
     }
 }
