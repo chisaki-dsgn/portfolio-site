@@ -228,4 +228,25 @@ img {
   font-size: 0.75rem;
 }
 
+.p-top__mv {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+}
+.p-top__title {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  translate: 0 -50%;
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .p-top__title {
+    font-size: 4.5rem;
+  }
+}
+.p-top__title span {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
