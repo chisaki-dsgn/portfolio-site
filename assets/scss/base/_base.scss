@@ -7,6 +7,7 @@ body{
     font-size: rem(14);
     color: $color-text-main;
     font-family: "Poiret One", "Noto Sans JP", sans-serif;
+    line-height: $line-height-base;
     @include mq{
         font-size: rem(16);
     }

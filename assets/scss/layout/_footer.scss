@@ -1,0 +1,71 @@
+@use '../base/variables' as *;
+
+.l-footer{
+    font-family: $font-family-ja;
+    background-color: $color-theme-main;
+    text-align: center;
+    color: $color-text-inverse;
+    &__flex{
+        padding-block: rem(70);
+        @include mq{
+            display: flex;
+            padding-block: rem(80);
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__logo{
+        margin-bottom: rem(80);
+        @include mq{
+            width: 30%;
+            margin-bottom: 0;
+        }
+    }
+    &__logo-img{
+        display: block;
+        margin-inline: auto;
+        width: 180px;
+        @include mq{
+            width: 200px;
+        }
+    }
+    &__contact{
+        margin-bottom: rem(80);
+        @include mq{
+            margin-bottom: 0;
+            width: 30%;
+        }
+        &-x{
+            display: flex;
+            width: fit-content;
+            gap: 10px;
+            align-items: center;
+            margin-inline: auto;
+        }
+        &-logo{
+            display: inline-block;
+            width: rem(16);
+        }
+        &-text{
+            display: inline-block;
+        }
+    }
+    &__nav{
+        @include mq{
+            text-align: center;
+            width: 30%;
+        }
+    }
+    &__list-item{
+        &:not(:last-child){
+            margin-bottom: rem(14);
+            @include mq{
+                margin-bottom: rem(16);
+            }
+        }
+    }
+    &__copy{
+        color: $color-theme-sub;
+        font-size: rem(12);
+    }
+}
