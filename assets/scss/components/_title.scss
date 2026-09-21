@@ -1,0 +1,16 @@
+
+.c-section-title{
+    font-size: rem(36);
+    text-align: center;
+    @include mq{
+        font-size: rem(64);
+    }
+}
+
+.c-page-title{
+    font-size: rem(64);
+    text-align: center;
+    @include mq{
+        font-size: rem(165);
+    }
+}
