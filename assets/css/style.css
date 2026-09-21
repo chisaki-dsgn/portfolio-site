@@ -312,6 +312,7 @@ img {
 }
 
 .p-top-works {
+  background-color: #fff;
   padding-top: 100px;
 }
 @media (min-width: 768px) {
@@ -369,6 +370,75 @@ img {
   color: #777;
   background-color: #d4d8df;
   border-radius: 5px;
+}
+
+.p-top-about {
+  background-color: #fdfcf8;
+}
+.p-top-about__flex {
+  margin-inline: auto;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .p-top-about__flex {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 760px;
+    margin-bottom: 60px;
+  }
+}
+.p-top-about__img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  margin-inline: auto;
+  border-radius: 500px;
+  margin-bottom: 1rem;
+  background-color: #c9c9c9;
+}
+@media (min-width: 768px) {
+  .p-top-about__img {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-inline: 0;
+  }
+}
+@media (min-width: 768px) {
+  .p-top-about__body {
+    flex: 1;
+  }
+}
+.p-top-about__name {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .p-top-about__name {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+}
+.p-top-about__text {
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 1rem;
+}
+.p-top-about__category-item {
+  display: inline-block;
+  margin-block: 10px;
+  background-color: #d4d8df;
+  color: #777;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.75rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media (min-width: 768px) {
+  .p-top-about__category-item {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
