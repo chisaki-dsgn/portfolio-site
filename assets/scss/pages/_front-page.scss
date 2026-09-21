@@ -24,6 +24,7 @@
 
 // worksセクション
 .p-top-works{
+    background-color: $color-bg-sub;
     padding-top: $spacing-sp-lg;
     @include mq{
         padding-top: $spacing-pc-lg;
@@ -73,6 +74,69 @@
             color: $color-text-sub;
             background-color: $color-theme-sub;
             border-radius: 5px;
+        }
+    }
+}
+
+// aboutセクション
+.p-top-about{
+    background-color: $color-bg-main;
+    &__flex{
+        margin-inline: auto;
+        margin-bottom: $spacing-sp-sm;
+        @include mq{
+            display: flex;
+            gap: rem(64);
+            justify-content: center;
+            align-items: center;
+            max-width: 760px;
+            margin-bottom: $spacing-pc-sm;
+        }
+    }
+    &__img{
+        width: 200px;
+        aspect-ratio: 1 / 1;
+        margin-inline: auto;
+        border-radius: 500px;
+        margin-bottom: rem(16);
+        background-color: #c9c9c9;
+        @include mq{
+            // width: 270px;
+            flex-shrink: 0;
+            margin-bottom: 0;
+            margin-inline:0 ;
+        }
+    }
+    &__body{
+        @include mq{
+            flex: 1;
+        }
+    }
+    &__name{
+        font-size: rem(16);
+        text-align: center;
+        margin-bottom: rem(16);
+        @include mq{
+            font-size: rem(20);
+            text-align: left;
+        }
+    }
+    &__text{
+        font-family: $font-family-ja;
+        margin-bottom: rem(16);
+    }
+    &__category-item{
+        display: inline-block;
+        margin-block: 10px;
+        background-color: $color-theme-sub;
+        color: $color-text-sub;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: rem(12);
+        font-family: $font-family-ja;
+        @include mq{
+            font-size: rem(14);
+            margin-bottom: 0;
         }
     }
 }
