@@ -140,3 +140,42 @@
         }
     }
 }
+
+// contactセクション
+.p-top-contact{
+    background-color: $color-bg-sub;
+    padding-bottom: $spacing-sp-lg;
+    text-align: center;
+    @include mq{
+        padding-bottom: $spacing-pc-lg;
+    }
+    &__btn{
+        margin-bottom: $spacing-sp-sm;
+        @include mq{
+            margin-bottom: $spacing-pc-sm;
+        }
+    }
+    &__note{
+        font-size: rem(12);
+        margin-bottom: rem(20);
+        @include mq{
+            margin-bottom: rem(40);
+        }
+    }
+    &__x{
+        border: solid 2px $color-theme-main;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 3px;
+        font-family: $font-family-ja;
+        transition: scale .3s ease;
+        span{
+            display: inline-block;
+            width: rem(14);
+            margin-right: rem(8);
+        }
+        &:hover{
+            scale: 0.95;
+        }
+    }
+}

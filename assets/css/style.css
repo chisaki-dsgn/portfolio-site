@@ -114,6 +114,33 @@ img {
   color: #778da9;
 }
 
+.c-btn-contact {
+  position: relative;
+  width: 300px;
+  height: 64px;
+  line-height: 64px;
+  background-color: #f4d068;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 5px 0 #bfbbb0;
+  transition: box-shadow 0.3s ease, translate 0.3s ease;
+}
+@media (min-width: 768px) {
+  .c-btn-contact {
+    width: 400px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.25rem;
+  }
+}
+.c-btn-contact:hover {
+  box-shadow: none;
+  translate: 0 5px;
+}
+.c-btn-contact__icon {
+  margin-left: 0.5rem;
+}
+
 .l-header {
   background-color: #778da9;
   width: 100%;
@@ -439,6 +466,50 @@ img {
     font-size: 0.875rem;
     margin-bottom: 0;
   }
+}
+
+.p-top-contact {
+  background-color: #fff;
+  padding-bottom: 100px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .p-top-contact {
+    padding-bottom: 160px;
+  }
+}
+.p-top-contact__btn {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .p-top-contact__btn {
+    margin-bottom: 60px;
+  }
+}
+.p-top-contact__note {
+  font-size: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 768px) {
+  .p-top-contact__note {
+    margin-bottom: 2.5rem;
+  }
+}
+.p-top-contact__x {
+  border: solid 2px #778da9;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: "Noto Sans JP", sans-serif;
+  transition: scale 0.3s ease;
+}
+.p-top-contact__x span {
+  display: inline-block;
+  width: 0.875rem;
+  margin-right: 0.5rem;
+}
+.p-top-contact__x:hover {
+  scale: 0.95;
 }
 
 /*# sourceMappingURL=style.css.map */
