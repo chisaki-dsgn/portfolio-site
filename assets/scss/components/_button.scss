@@ -43,7 +43,9 @@
     height: 64px;
     line-height: 64px;
     background-color: $color-theme-accent;
-    display: inline-block;
+    display: block;
+    text-align: center;
+    margin-inline: auto;
     border-radius: 10px;
     box-shadow: 0 5px 0 #bfbbb0;
     transition: box-shadow .3s ease, translate .3s ease;

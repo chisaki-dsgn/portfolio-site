@@ -1,2 +1,108 @@
 @use '../base/variables' as *;
 
+.p-archive-works{
+    padding-block: $spacing-sp-lg;
+    @include mq{
+        padding-block: $spacing-pc-lg;
+    }
+    &__text{
+        font-family: $font-family-ja;
+        text-align: center;
+        margin-bottom: $spacing-sp-sm;
+        @include mq{
+            margin-bottom: $spacing-pc-sm;
+        }
+    }
+    &__list{
+        margin-bottom: $spacing-sp-md;
+        @include mq{
+            margin-bottom: $spacing-pc-md;
+        }
+    }
+    &__item{
+        &:not(:last-child){
+            margin-bottom: $spacing-sp-sm;
+            @include mq{
+                margin-bottom: $spacing-pc-sm;
+            }
+        }
+    }
+    &__card{
+        display: block;
+        opacity: 1;
+        transition: opacity .3s ease;
+        @include mq{
+            display: flex;
+            gap: rem(32);
+            align-items: center;
+        }
+        &:hover{
+            opacity: .8;
+            .p-archive-works__card-more{
+                border-bottom: 1px solid currentColor;
+                opacity: .7;
+            }
+        }
+    }
+    &__item:nth-child(even){
+        .p-archive-works__card{
+            @include mq{
+                flex-direction: row-reverse;
+            }
+            &-body{
+                @include mq{
+                    text-align: right;
+                }
+            }
+        }
+    }
+    &__card-img{
+        background-color: #cdcdcd;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        margin-bottom: rem(16);
+        @include mq{
+            width: 35%;
+            margin-bottom: 0;
+        }
+    }
+    &__card-body{
+        font-family: $font-family-ja;
+        @include mq{
+            flex: 1;
+        }
+    }
+    &__card-title{
+        font-size: rem(16);
+        margin-bottom: rem(16);
+        @include mq{
+            font-size: rem(20);
+            margin-bottom: rem(32);
+        }
+    }
+    &__card-detail{
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+        margin-bottom: rem(16);
+        @include mq{
+            margin-bottom: rem(32);
+            gap: rem(10);
+        }
+    }
+    &__card-more{
+        text-align: right;
+        border-bottom: solid 1px transparent;
+        transition: border-bottom .3s ease, opacity .3s ease;
+        &::after{
+            content: "";
+            display: inline-block;
+            width: .7em;
+            height: .7em;
+            border-top: 1px solid currentColor;
+            border-right: 1px solid currentColor;
+            rotate: 45deg;
+            margin-left: .5em;
+        }
+    }
+}
