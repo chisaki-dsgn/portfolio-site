@@ -17,3 +17,20 @@ document.addEventListener('click', (e)=>{
         hamburgerBtn.classList.remove('is-active');
     }
 });
+
+// archive-worksの画像フェードイン
+const fadeImg = document.querySelectorAll('.js-fadein');
+const observer = new IntersectionObserver((entries,observer)=>{
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+        entry.target.classList.add('is-active');
+        observer.unobserve(entry.target);
+        }
+    });
+},{
+    rootMargin: '0px 0px -20% 0px'
+});
+
+fadeImg.forEach(e =>{
+    observer.observe(e)
+});
