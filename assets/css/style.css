@@ -135,12 +135,15 @@ img {
     font-size: 1.25rem;
   }
 }
+.c-btn-contact::after {
+  content: "\f31c";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  margin-left: 0.5em;
+}
 .c-btn-contact:hover {
   box-shadow: none;
   translate: 0 5px;
-}
-.c-btn-contact__icon {
-  margin-left: 0.5rem;
 }
 
 .l-header {
