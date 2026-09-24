@@ -1,0 +1,147 @@
+@use '../base/variables' as *;
+
+.p-about{
+    padding-block: $spacing-sp-lg;
+    @include mq{
+        padding-block: $spacing-pc-lg;
+    }
+    &__intro{
+        font-family: $font-family-ja;
+        margin-bottom: $spacing-sp-sm;
+        margin-inline: auto;
+        @include mq{
+            margin-bottom: $spacing-pc-sm;
+            display: flex;
+            gap: rem(24);
+            max-width: 640px;
+        }
+        &-img{
+            width: 200px;
+            aspect-ratio: 1 / 1;
+            border-radius: 500px;
+            background-color: #ccc;
+            margin-bottom: rem(24);
+            margin-inline: auto;
+            @include mq{
+                flex: 0 0 auto;
+                margin-bottom: 0;
+            }
+        }
+        &-body{
+            @include mq{
+                flex: 1;
+            }
+        }
+        &-name{
+            text-align: center;
+            margin-bottom: rem(24);
+            @include mq{
+                text-align: left;
+                margin-bottom: rem(16);
+            }
+            .ja{
+                display: block;
+                font-size: rem(16);
+                margin-bottom: rem(5);
+                @include mq{
+                    font-size: rem(20);
+                }
+            }
+            .en{
+                display: block;
+                font-size: rem(13);
+                color: $color-text-sub;
+                @include mq{
+                    font-size: rem(14);
+                }
+            }
+        }
+    }
+    &__ability{
+        font-family: $font-family-ja;
+        margin-bottom: $spacing-sp-sm;
+        @include mq{
+            margin-bottom: $spacing-pc-sm;
+            display: flex;
+            justify-content: center;
+            gap: rem(16);
+        }
+        &-block{
+            width: 100%;
+            padding: rem(5) rem(10);
+            background-color: $color-theme-sub;
+            border-radius: 5px;
+            @include mq{
+                flex: 1;
+            }
+            &.skills{
+                margin-bottom: rem(16);
+                @include mq{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-title{
+            text-align: center;
+            font-size: rem(16);
+            @include mq{
+                font-size: rem(20);
+            }
+        }
+    }
+    &__history{
+        font-family: $font-family-ja;
+        margin-inline: auto;
+        width: 100%;
+        max-width: 640px;
+        margin-bottom: $spacing-sp-sm;
+        @include mq{
+            margin-bottom: $spacing-pc-sm;
+        }
+        &-title{
+            cursor: pointer;
+            list-style: none;
+            text-align: center;
+            margin-inline: auto;
+            font-size: rem(12);
+            width: 250px;
+            background-color: #ccc;
+            border-radius: 100px;
+            margin-bottom: rem(16);
+            opacity: 1;
+            transition: opacity .3s ease;
+            &:hover{
+                opacity: .7;
+            }
+            &::after{
+                content: "＋";
+                margin-left: .5em;
+            }
+            @include mq{
+                font-size: rem(14);
+            }
+        }
+        &[open]{
+            .p-about__history-title::after{
+                content: "ー";
+            }
+        }
+        &-list{
+            background-color: #fff;
+            padding: rem(10);
+        }
+        &-term{
+            display: inline-block;
+            width: 20%;
+            margin-right: 3%;
+            text-align: right;
+            &:not(:last-child){
+                margin-bottom: rem(8);
+            }
+        }
+        &-desc{
+            display: inline-block;
+            width: 75%;
+        }
+    }
+}
