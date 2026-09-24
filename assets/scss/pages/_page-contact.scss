@@ -1,0 +1,118 @@
+@use '../base/variables' as *;
+
+.p-contact{
+    padding-block: $spacing-sp-lg;
+    @include mq{
+        padding-block: $spacing-pc-lg;
+    }
+    &__form{
+        margin-bottom: $spacing-sp-md;
+        background-color: $color-theme-sub;
+        font-family: $font-family-ja;
+        // text-align: center;
+        border-radius: 12px;
+        padding: rem(50) rem(10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(24);
+        @include mq{
+            border-radius: 20px;
+            padding: rem(100) rem(16);
+            margin-bottom: $spacing-pc-md;
+        }
+        &-title{
+            margin-bottom: rem(8);
+            font-size: rem(20);
+            @include mq{
+                font-size: rem(32);
+            }
+        }
+    }
+    
+    &__form-item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @include mq{
+            flex-direction: row;
+        }
+        label{
+            &::after{
+                    content: "：";
+                }
+            @include mq{
+                display: block;
+                width: 20%;
+                text-align: right;
+            }
+        }
+        input{
+            display: block;
+            padding: rem(5) rem(10);
+            border: solid 1px $color-text-main;
+            border-radius: 5px;
+            background-color: #fff;
+            @include mq{
+                width: 80%;
+            }
+        }
+        textarea{
+            display: block;
+            height: 180px;
+            border: solid 1px $color-text-main;
+            padding: rem(5) rem(10);
+            border-radius: 5px;
+            background-color: #fff;
+            @include mq{
+                width: 80%;
+            }
+        }
+    }
+    &__privacy-check{
+        input{
+            background-color: #fff;
+            border: 1px solid $color-text-main;
+            width: rem(16);
+            height: rem(16);
+            position: relative;
+            &:checked::after{
+                content: "";
+                position: absolute;
+                width: rem(5);
+                height: rem(10);
+                top:1px;
+                left: 5px;
+                border: solid $color-text-main;
+                border-width: 0 2px 2px 0;
+                rotate: 45deg;
+            }
+        }
+        a{
+            opacity: 1;
+            transition: opacity .3s ease;
+            text-decoration: underline;
+            &:hover{
+                opacity: .6;
+            }
+        }
+    }
+    &__form-btn{
+        font-weight: 600;
+        &::after{
+            display: none;
+        }
+    }
+    &__form-note{
+        font-size: rem(14);
+        color: $color-text-sub;
+        font-family: $font-family-ja;
+    }
+    &__note{
+        font-family: $font-family-ja;
+        text-align: center;
+        &::after{
+            content: "▼";
+        }
+    }
+}
