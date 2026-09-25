@@ -1,0 +1,98 @@
+@use '../base/variables' as *;
+
+.p-single-works{
+    font-family: $font-family-ja;
+    padding-block: $spacing-sp-lg;
+    @include mq{
+        padding-block: $spacing-pc-lg;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sp-md;
+        margin-bottom: $spacing-sp-md;
+        @include mq{
+            gap: $spacing-pc-md;
+            margin-bottom: $spacing-pc-md;
+        }
+    }
+    &__head{
+        position: relative;
+        border-bottom: solid 1px $color-text-main;
+        padding-bottom: rem(24);
+        @include mq{
+            padding-bottom: rem(40);
+        }
+    }
+    &__head-img{
+        width: 100%;
+        aspect-ratio: 5 / 3;
+        margin-bottom: rem(24);
+        background-color: #ccc;
+        @include mq{
+            width: 80%;
+            margin-bottom: 0;
+            margin-left: auto;
+        }
+    }
+    &__title{
+        font-size: rem(24);
+        line-height: 1.3;
+        @include mq{
+            font-size: rem(40);
+        }
+        .category{
+            font-size: rem(12);
+            display: block;
+            @include mq{
+                font-size: rem(14);
+            }
+        }
+        @include mq{
+            position: absolute;
+            left: 0;
+            bottom: rem(40);
+        }
+    }
+    &__item{
+        border-bottom: solid 1px #ccc;
+        padding-block: rem(32);
+        @include mq{
+            display: flex;
+            dt{
+                width: 25%;
+            }
+            dd{
+                width: 70%;
+            }
+        }
+        dt{
+            color: $color-theme-main;
+        }
+        ul{
+            list-style: disc inside;
+        }
+    }
+    &__capture-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(32);
+    }
+    &__capture-item{
+        width: 200px;
+        height: 340px;
+        border: solid #5e6469;
+        border-width: 10px 10px 30px 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #5e6469;
+        overflow-y: auto;
+        scrollbar-width: none;
+        img{
+            height: auto;
+        }
+    }
+    &__btn{
+        border-radius: 15px;
+    }
+}
