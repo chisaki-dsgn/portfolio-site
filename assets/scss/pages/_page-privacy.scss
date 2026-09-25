@@ -4,7 +4,7 @@
     font-family: $font-family-ja;
     padding-block: $spacing-sp-lg;
     @include mq{
-        margin-block: $spacing-pc-lg;
+        padding-block: $spacing-pc-lg;
     }
     &__title{
         text-align: center;
