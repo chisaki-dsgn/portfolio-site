@@ -1005,4 +1005,127 @@ img {
   }
 }
 
+.p-single-works {
+  font-family: "Noto Sans JP", sans-serif;
+  padding-block: 100px;
+}
+@media (min-width: 768px) {
+  .p-single-works {
+    padding-block: 160px;
+  }
+}
+.p-single-works__container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .p-single-works__container {
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+}
+.p-single-works__head {
+  position: relative;
+  border-bottom: solid 1px #1b263b;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .p-single-works__head {
+    padding-bottom: 2.5rem;
+  }
+}
+.p-single-works__head-img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  margin-bottom: 1.5rem;
+  background-color: #ccc;
+}
+@media (min-width: 768px) {
+  .p-single-works__head-img {
+    width: 80%;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+}
+.p-single-works__title {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+@media (min-width: 768px) {
+  .p-single-works__title {
+    font-size: 2.5rem;
+  }
+}
+.p-single-works__title .category {
+  font-size: 0.75rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .p-single-works__title .category {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-single-works__title {
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+  }
+}
+.p-single-works__item {
+  border-bottom: solid 1px #ccc;
+  padding-block: 2rem;
+}
+@media (min-width: 768px) {
+  .p-single-works__item {
+    display: flex;
+  }
+  .p-single-works__item dt {
+    width: 25%;
+  }
+  .p-single-works__item dd {
+    width: 70%;
+  }
+}
+.p-single-works__item dt {
+  color: #778da9;
+}
+.p-single-works__item ul {
+  list-style: disc inside;
+}
+.p-single-works__item-link {
+  display: inline-block;
+  border-bottom: solid 1px #1b263b;
+  opacity: 1;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+.p-single-works__item-link:hover {
+  opacity: 0.7;
+  border-color: transparent;
+}
+.p-single-works__capture-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.p-single-works__capture-item {
+  width: 200px;
+  height: 340px;
+  border: solid #5e6469;
+  border-width: 10px 10px 30px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #5e6469;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.p-single-works__capture-item img {
+  height: auto;
+}
+.p-single-works__btn {
+  border-radius: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
