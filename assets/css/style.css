@@ -1095,6 +1095,16 @@ img {
 .p-single-works__item ul {
   list-style: disc inside;
 }
+.p-single-works__item-link {
+  display: inline-block;
+  border-bottom: solid 1px #1b263b;
+  opacity: 1;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+.p-single-works__item-link:hover {
+  opacity: 0.7;
+  border-color: transparent;
+}
 .p-single-works__capture-container {
   display: flex;
   justify-content: center;
