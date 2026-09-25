@@ -317,8 +317,20 @@ img {
     margin-bottom: 1rem;
   }
 }
-.l-footer__copy {
+.l-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
   color: #d4d8df;
+}
+@media (min-width: 768px) {
+  .l-footer__bottom {
+    gap: 4rem;
+  }
+}
+.l-footer__copy {
   font-size: 0.75rem;
 }
 
