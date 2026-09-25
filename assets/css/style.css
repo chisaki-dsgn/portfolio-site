@@ -957,7 +957,7 @@ img {
 }
 @media (min-width: 768px) {
   .p-privacy {
-    margin-block: 160px;
+    padding-block: 160px;
   }
 }
 .p-privacy__title {
