@@ -64,8 +64,18 @@
             }
         }
     }
-    &__copy{
+    &__bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(8);
+        font-size: rem(12);
         color: $color-theme-sub;
+        @include mq{
+            gap: rem(64);
+        }
+    }
+    &__copy{
         font-size: rem(12);
     }
 }

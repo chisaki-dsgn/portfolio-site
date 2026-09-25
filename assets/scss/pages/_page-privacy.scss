@@ -1,0 +1,47 @@
+@use '../base/variables' as *;
+
+.p-privacy{
+    font-family: $font-family-ja;
+    padding-block: $spacing-sp-lg;
+    @include mq{
+        padding-block: $spacing-pc-lg;
+    }
+    &__title{
+        text-align: center;
+        font-size: rem(24);
+        font-weight: 500;
+        margin-bottom: $spacing-sp-md;
+        @include mq{
+            font-size: rem(40);
+            margin-bottom: $spacing-pc-md;
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sp-md;
+        margin-bottom: $spacing-sp-md;
+        @include mq{
+            gap: $spacing-pc-md;
+            margin-bottom: $spacing-pc-md;
+        }
+    }
+    &__section{
+        &-title{
+            font-size: rem(20);
+            margin-bottom: rem(16);
+            @include mq{
+                font-size: rem(32);
+                margin-bottom: rem(24);
+            }
+        }
+        ul{
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-top: rem(8);
+            @include mq{
+                margin-top: rem(16);
+            }
+        }
+    }
+}
