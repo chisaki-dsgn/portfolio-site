@@ -1,7 +1,6 @@
 @use '../base/variables' as *;
 
 .p-single-works{
-    font-family: $font-family-ja;
     &__container{
         display: flex;
         flex-direction: column;

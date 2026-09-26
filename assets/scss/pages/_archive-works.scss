@@ -2,7 +2,6 @@
 
 .p-archive-works{
     &__text{
-        font-family: $font-family-ja;
         text-align: center;
         margin-bottom: $spacing-sp-sm;
         @include mq{
@@ -70,7 +69,6 @@
         }
     }
     &__card-body{
-        font-family: $font-family-ja;
         @include mq{
             flex: 1;
         }

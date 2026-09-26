@@ -4,8 +4,6 @@
     &__form{
         margin-bottom: $spacing-sp-md;
         background-color: $color-theme-sub;
-        font-family: $font-family-ja;
-        // text-align: center;
         border-radius: 12px;
         padding: rem(50) rem(10);
         display: flex;
@@ -102,10 +100,8 @@
     &__form-note{
         font-size: rem(14);
         color: $color-text-sub;
-        font-family: $font-family-ja;
     }
     &__note{
-        font-family: $font-family-ja;
         text-align: center;
         &::after{
             content: "▼";

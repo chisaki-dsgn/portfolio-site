@@ -1,7 +1,6 @@
 @use '../base/variables' as *;
 
 .l-footer{
-    font-family: $font-family-ja;
     background-color: $color-theme-main;
     text-align: center;
     color: $color-text-inverse;
@@ -53,6 +52,7 @@
     }
     &__nav{
         @include mq{
+            font-family: $font-family-en;
             text-align: center;
             width: 30%;
         }

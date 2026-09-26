@@ -4,7 +4,7 @@ body {
   background-color: #fdfcf8;
   font-size: 0.875rem;
   color: #1b263b;
-  font-family: "Poiret One", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
@@ -14,11 +14,11 @@ body {
 }
 
 main {
-  padding-top: 70px;
+  padding-top: calc(70px + env(safe-area-inset-top));
 }
 @media (min-width: 768px) {
   main {
-    padding-top: 80px;
+    padding-top: calc(80px + env(safe-area-inset-top));
   }
 }
 
@@ -29,12 +29,12 @@ img {
 }
 
 .l-main {
-  padding-top: 170px;
+  padding-top: calc(170px + env(safe-area-inset-top));
   padding-bottom: 100px;
 }
 @media (min-width: 768px) {
   .l-main {
-    padding-top: 240px;
+    padding-top: calc(240px + env(safe-area-inset-top));
     padding-bottom: 160px;
   }
 }
@@ -50,11 +50,12 @@ img {
 
 .l-inner {
   width: min(100%, 1080px);
-  padding-inline: 1rem;
+  padding-inline: calc(1rem + env(safe-area-inset-left)) calc(1rem + env(safe-area-inset-right));
   margin-inline: auto;
 }
 
 .c-section-title {
+  font-family: "Poiret One", sans-serif;
   font-size: 2.25rem;
   text-align: center;
   margin-bottom: 40px;
@@ -67,6 +68,7 @@ img {
 }
 
 .c-page-title {
+  font-family: "Poiret One", sans-serif;
   font-size: 4rem;
   text-align: center;
   margin-bottom: 40px;
@@ -148,9 +150,11 @@ img {
 }
 
 .l-header {
+  font-family: "Poiret One", sans-serif;
+  padding-top: env(safe-area-inset-top);
   background-color: #778da9;
   width: 100%;
-  height: 70px;
+  height: calc(70px + env(safe-area-inset-top));
   position: fixed;
   top: 0;
   left: 0;
@@ -158,7 +162,7 @@ img {
 }
 @media (min-width: 768px) {
   .l-header {
-    height: 80px;
+    height: calc(80px + env(safe-area-inset-top));
   }
 }
 .l-header__flex {
@@ -245,10 +249,10 @@ img {
 }
 
 .l-footer {
-  font-family: "Noto Sans JP", sans-serif;
   background-color: #778da9;
   text-align: center;
   color: #fdfcf8;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 .l-footer__flex {
   padding-block: 4.375rem;
@@ -305,6 +309,7 @@ img {
 }
 @media (min-width: 768px) {
   .l-footer__nav {
+    font-family: "Poiret One", sans-serif;
     text-align: center;
     width: 30%;
   }
@@ -411,7 +416,6 @@ img {
 .p-top-works__card-category {
   display: inline-block;
   padding: 3px 5px;
-  font-family: "Noto Sans JP", sans-serif;
   color: #777;
   background-color: #d4d8df;
   border-radius: 5px;
@@ -466,7 +470,6 @@ img {
   }
 }
 .p-top-about__text {
-  font-family: "Noto Sans JP", sans-serif;
   margin-bottom: 1rem;
 }
 .p-top-about__category-item {
@@ -477,7 +480,6 @@ img {
   border-radius: 5px;
   padding: 10px;
   font-size: 0.75rem;
-  font-family: "Noto Sans JP", sans-serif;
 }
 @media (min-width: 768px) {
   .p-top-about__category-item {
@@ -518,7 +520,6 @@ img {
   display: inline-block;
   padding: 10px;
   border-radius: 3px;
-  font-family: "Noto Sans JP", sans-serif;
   transition: scale 0.3s ease;
 }
 .p-top-contact__x span {
@@ -530,16 +531,7 @@ img {
   scale: 0.95;
 }
 
-.p-archive-works {
-  padding-block: 100px;
-}
-@media (min-width: 768px) {
-  .p-archive-works {
-    padding-block: 160px;
-  }
-}
 .p-archive-works__text {
-  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -612,9 +604,6 @@ img {
   opacity: 1;
   translate: 0 0;
 }
-.p-archive-works__card-body {
-  font-family: "Noto Sans JP", sans-serif;
-}
 @media (min-width: 768px) {
   .p-archive-works__card-body {
     flex: 1;
@@ -658,16 +647,7 @@ img {
   margin-left: 0.5em;
 }
 
-.p-about {
-  padding-block: 100px;
-}
-@media (min-width: 768px) {
-  .p-about {
-    padding-block: 160px;
-  }
-}
 .p-about__intro {
-  font-family: "Noto Sans JP", sans-serif;
   margin-bottom: 40px;
   margin-inline: auto;
 }
@@ -701,6 +681,7 @@ img {
 .p-about__intro-name {
   text-align: center;
   margin-bottom: 1.5rem;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   .p-about__intro-name {
@@ -722,6 +703,7 @@ img {
   display: block;
   font-size: 0.8125rem;
   color: #777;
+  font-family: "Poiret One", sans-serif;
 }
 @media (min-width: 768px) {
   .p-about__intro-name .en {
@@ -729,7 +711,6 @@ img {
   }
 }
 .p-about__ability {
-  font-family: "Noto Sans JP", sans-serif;
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
@@ -762,6 +743,7 @@ img {
 .p-about__ability-title {
   text-align: center;
   font-size: 1rem;
+  font-family: "Poiret One", sans-serif;
 }
 @media (min-width: 768px) {
   .p-about__ability-title {
@@ -769,15 +751,14 @@ img {
   }
 }
 .p-about__history {
-  font-family: "Noto Sans JP", sans-serif;
   margin-inline: auto;
   width: 100%;
-  max-width: 640px;
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .p-about__history {
     margin-bottom: 60px;
+    max-width: 640px;
   }
 }
 .p-about__history-title {
@@ -814,6 +795,7 @@ img {
 }
 .p-about__history-term {
   display: inline-block;
+  vertical-align: top;
   width: 20%;
   margin-right: 3%;
   text-align: right;
@@ -826,18 +808,9 @@ img {
   width: 75%;
 }
 
-.p-contact {
-  padding-block: 100px;
-}
-@media (min-width: 768px) {
-  .p-contact {
-    padding-block: 160px;
-  }
-}
 .p-contact__form {
   margin-bottom: 60px;
   background-color: #d4d8df;
-  font-family: "Noto Sans JP", sans-serif;
   border-radius: 12px;
   padding: 3.125rem 0.625rem;
   display: flex;
@@ -941,25 +914,14 @@ img {
 .p-contact__form-note {
   font-size: 0.875rem;
   color: #777;
-  font-family: "Noto Sans JP", sans-serif;
 }
 .p-contact__note {
-  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
 }
 .p-contact__note::after {
   content: "▼";
 }
 
-.p-privacy {
-  font-family: "Noto Sans JP", sans-serif;
-  padding-block: 100px;
-}
-@media (min-width: 768px) {
-  .p-privacy {
-    padding-block: 160px;
-  }
-}
 .p-privacy__title {
   text-align: center;
   font-size: 1.5rem;
@@ -1005,15 +967,6 @@ img {
   }
 }
 
-.p-single-works {
-  font-family: "Noto Sans JP", sans-serif;
-  padding-block: 100px;
-}
-@media (min-width: 768px) {
-  .p-single-works {
-    padding-block: 160px;
-  }
-}
 .p-single-works__container {
   display: flex;
   flex-direction: column;

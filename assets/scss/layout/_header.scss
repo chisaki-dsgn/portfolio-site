@@ -1,6 +1,7 @@
 @use '../base/variables' as *;
 
 .l-header{
+    font-family: $font-family-en;
     padding-top: env(safe-area-inset-top);
     background-color: $color-theme-main;
     width: 100%;
