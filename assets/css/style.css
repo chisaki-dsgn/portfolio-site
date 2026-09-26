@@ -165,6 +165,9 @@ img {
     height: calc(80px + env(safe-area-inset-top));
   }
 }
+.l-header .l-inner {
+  width: min(100%, 1400px);
+}
 .l-header__flex {
   display: flex;
   justify-content: space-between;
@@ -253,6 +256,9 @@ img {
   text-align: center;
   color: #fdfcf8;
   padding-bottom: env(safe-area-inset-bottom);
+}
+.l-footer .l-inner {
+  width: min(100%, 1400px);
 }
 .l-footer__flex {
   padding-block: 4.375rem;

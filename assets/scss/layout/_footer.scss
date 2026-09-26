@@ -5,6 +5,9 @@
     text-align: center;
     color: $color-text-inverse;
     padding-bottom: env(safe-area-inset-bottom);
+    .l-inner{
+        width: min(100%, 1400px);
+    }
     &__flex{
         padding-block: rem(70);
         @include mq{
