@@ -1,10 +1,6 @@
 @use '../base/variables' as *;
 
 .p-about{
-    padding-block: $spacing-sp-lg;
-    @include mq{
-        padding-block: $spacing-pc-lg;
-    }
     &__intro{
         font-family: $font-family-ja;
         margin-bottom: $spacing-sp-sm;

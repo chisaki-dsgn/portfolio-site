@@ -2,10 +2,6 @@
 
 .p-single-works{
     font-family: $font-family-ja;
-    padding-block: $spacing-sp-lg;
-    @include mq{
-        padding-block: $spacing-pc-lg;
-    }
     &__container{
         display: flex;
         flex-direction: column;

@@ -1,10 +1,6 @@
 @use '../base/variables' as *;
 
 .p-contact{
-    padding-block: $spacing-sp-lg;
-    @include mq{
-        padding-block: $spacing-pc-lg;
-    }
     &__form{
         margin-bottom: $spacing-sp-md;
         background-color: $color-theme-sub;

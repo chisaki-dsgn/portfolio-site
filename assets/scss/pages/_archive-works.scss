@@ -1,10 +1,6 @@
 @use '../base/variables' as *;
 
 .p-archive-works{
-    padding-block: $spacing-sp-lg;
-    @include mq{
-        padding-block: $spacing-pc-lg;
-    }
     &__text{
         font-family: $font-family-ja;
         text-align: center;

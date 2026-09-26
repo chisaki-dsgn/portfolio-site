@@ -13,9 +13,9 @@ body{
     }
 }
 main{
-    padding-top: 70px;
+    padding-top: calc(70px + env(safe-area-inset-top));
     @include mq{
-        padding-top: 80px;
+        padding-top: calc(80px + env(safe-area-inset-top));
     }
 }
 img{
@@ -26,10 +26,10 @@ img{
 
 // クラス指定共通スタイル
 .l-main{
-    padding-top: calc($spacing-sp-lg + 70px);
+    padding-top: calc($spacing-sp-lg + 70px + env(safe-area-inset-top));
     padding-bottom: $spacing-sp-lg;
     @include mq{
-        padding-top: calc($spacing-pc-lg + 80px);
+        padding-top: calc($spacing-pc-lg + 80px + env(safe-area-inset-top));
         padding-bottom: $spacing-pc-lg;
     }
 }
