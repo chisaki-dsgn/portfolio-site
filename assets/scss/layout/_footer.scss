@@ -5,6 +5,7 @@
     background-color: $color-theme-main;
     text-align: center;
     color: $color-text-inverse;
+    padding-bottom: env(safe-area-inset-bottom);
     &__flex{
         padding-block: rem(70);
         @include mq{
