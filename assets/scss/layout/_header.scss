@@ -1,6 +1,7 @@
 @use '../base/variables' as *;
 
 .l-header{
+    font-family: $font-family-en;
     padding-top: env(safe-area-inset-top);
     background-color: $color-theme-main;
     width: 100%;
@@ -11,6 +12,9 @@
     z-index: 100;
     @include mq{
         height: calc(80px + env(safe-area-inset-top));
+    }
+    .l-inner{
+        width: min(100%, 1400px);
     }
     &__flex{
         display: flex;

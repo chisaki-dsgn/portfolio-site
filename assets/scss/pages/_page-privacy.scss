@@ -1,7 +1,6 @@
 @use '../base/variables' as *;
 
 .p-privacy{
-    font-family: $font-family-ja;
     &__title{
         text-align: center;
         font-size: rem(24);
