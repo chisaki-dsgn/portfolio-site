@@ -41,6 +41,6 @@ img{
 }
 .l-inner{
     width: min(100%, 1080px);
-    padding-inline: rem(16);
+    padding-inline: calc(rem(16) + env(safe-area-inset-left)) calc(rem(16) + env(safe-area-inset-right));
     margin-inline: auto;
 }
