@@ -1053,7 +1053,8 @@ img {
   color: #778da9;
 }
 .p-single-works__item ul {
-  list-style: disc inside;
+  list-style: disc outside;
+  line-height: 1.7;
 }
 .p-single-works__item-link {
   display: inline-block;
@@ -1070,13 +1071,24 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  position: relative;
+}
+.p-single-works__capture-container::before {
+  content: "scroll";
+  font-size: 2rem;
+  color: #777;
+  font-family: "Poiret One", sans-serif;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  translate: -50% 0%;
 }
 .p-single-works__capture-item {
   width: 200px;
-  height: 340px;
-  border: solid #5e6469;
-  border-width: 10px 10px 30px 10px;
-  border-radius: 10px;
+  aspect-ratio: 9/16;
+  border: solid #afbac3;
+  border-width: 5px 5px 15px 5px;
+  border-radius: 5px;
   box-shadow: 0 0 5px #5e6469;
   overflow-y: auto;
   scrollbar-width: none;
