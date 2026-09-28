@@ -1055,6 +1055,7 @@ img {
 .p-single-works__item ul {
   list-style: disc outside;
   line-height: 1.7;
+  padding-left: 1em;
 }
 .p-single-works__item-link {
   display: inline-block;
