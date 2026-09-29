@@ -65,7 +65,9 @@
             color: $color-theme-main;
         }
         ul{
-            list-style: disc inside;
+            list-style: disc outside;
+            line-height: $line-height-wide;
+            padding-left: 1em;
         }
         &-link{
             display: inline-block;
@@ -83,13 +85,24 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: rem(32);
+        position: relative;
+        &::before{
+                content: "scroll";
+                font-size: rem(32);
+                color: $color-text-sub;
+                font-family: $font-family-en;
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                translate: -50% 0%;
+            }
     }
     &__capture-item{
         width: 200px;
-        height: 340px;
-        border: solid #5e6469;
-        border-width: 10px 10px 30px 10px;
-        border-radius: 10px;
+        aspect-ratio: 9 / 16;
+        border: solid #afbac3;
+        border-width: 5px 5px 15px 5px;
+        border-radius: 5px;
         box-shadow: 0 0 5px #5e6469;
         overflow-y: auto;
         scrollbar-width: none;
