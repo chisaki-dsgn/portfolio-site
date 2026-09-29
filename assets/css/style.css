@@ -451,6 +451,8 @@ img {
   aspect-ratio: 1/1;
   margin-inline: auto;
   border-radius: 500px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #f4d068;
   margin-bottom: 1rem;
   background-color: #c9c9c9;
 }
@@ -672,6 +674,8 @@ img {
   width: 200px;
   aspect-ratio: 1/1;
   border-radius: 500px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #f4d068;
   background-color: #ccc;
   margin-bottom: 1.5rem;
   margin-inline: auto;
@@ -805,8 +809,8 @@ img {
 .p-about__history-term {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
-  margin-right: 3%;
+  width: 30%;
+  margin-right: 1%;
   text-align: right;
 }
 .p-about__history-term:not(:last-child) {
@@ -814,7 +818,7 @@ img {
 }
 .p-about__history-desc {
   display: inline-block;
-  width: 75%;
+  width: 67%;
 }
 
 .p-contact__form {
