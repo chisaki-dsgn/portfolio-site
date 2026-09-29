@@ -312,9 +312,11 @@ img {
 .l-footer__contact-text {
   display: inline-block;
 }
+.l-footer__nav {
+  font-family: "Poiret One", sans-serif;
+}
 @media (min-width: 768px) {
   .l-footer__nav {
-    font-family: "Poiret One", sans-serif;
     text-align: center;
     width: 30%;
   }
@@ -762,6 +764,19 @@ img {
   .p-about__ability-title {
     font-size: 1.25rem;
   }
+}
+.p-about__ability-item {
+  display: flex;
+}
+.p-about__ability-item .title {
+  flex-shrink: 0;
+  font-weight: 500;
+}
+.p-about__ability-item .title::after {
+  content: "：";
+}
+.p-about__ability-item .detail {
+  flex: 1;
 }
 .p-about__history {
   margin-inline: auto;

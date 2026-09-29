@@ -54,8 +54,8 @@
         }
     }
     &__nav{
+        font-family: $font-family-en;
         @include mq{
-            font-family: $font-family-en;
             text-align: center;
             width: 30%;
         }

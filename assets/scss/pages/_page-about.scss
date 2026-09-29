@@ -87,6 +87,19 @@
                 font-size: rem(20);
             }
         }
+        &-item{
+            display: flex;
+            .title{
+                flex-shrink: 0;
+                font-weight: 500;
+                &::after{
+                    content: "：";
+                }
+            }
+            .detail{
+                flex: 1;
+            }
+        }
     }
     &__history{
         margin-inline: auto;
