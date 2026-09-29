@@ -7,8 +7,9 @@
         @include mq{
             margin-bottom: $spacing-pc-sm;
             display: flex;
-            gap: rem(24);
-            max-width: 640px;
+            gap: 3vw;
+            max-width: 890px;
+            align-items: center;
         }
         &-img{
             width: 200px;
