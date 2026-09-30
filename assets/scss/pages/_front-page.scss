@@ -91,7 +91,7 @@
             gap: rem(64);
             justify-content: center;
             align-items: center;
-            max-width: 760px;
+            max-width: 820px;
             margin-bottom: $spacing-pc-sm;
         }
     }
@@ -100,10 +100,11 @@
         aspect-ratio: 1 / 1;
         margin-inline: auto;
         border-radius: 500px;
+        overflow: hidden;
+        box-shadow: 0 0 10px $color-theme-accent;
         margin-bottom: rem(16);
         background-color: #c9c9c9;
         @include mq{
-            // width: 270px;
             flex-shrink: 0;
             margin-bottom: 0;
             margin-inline:0 ;
@@ -121,6 +122,14 @@
         @include mq{
             font-size: rem(20);
             text-align: left;
+        }
+        &--en{
+            font-family: $font-family-en;
+            display: block;
+            text-align: center;
+            @include mq{
+                text-align: left;
+            }
         }
     }
     &__text{

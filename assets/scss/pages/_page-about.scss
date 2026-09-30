@@ -7,13 +7,16 @@
         @include mq{
             margin-bottom: $spacing-pc-sm;
             display: flex;
-            gap: rem(24);
-            max-width: 640px;
+            gap: 3vw;
+            max-width: 890px;
+            align-items: center;
         }
         &-img{
             width: 200px;
             aspect-ratio: 1 / 1;
             border-radius: 500px;
+            overflow: hidden;
+            box-shadow: 0 0 10px $color-theme-accent;
             background-color: #ccc;
             margin-bottom: rem(24);
             margin-inline: auto;
@@ -56,15 +59,18 @@
     }
     &__ability{
         margin-bottom: $spacing-sp-sm;
+        font-size: rem(12);
+        line-height: $line-height-wide;
         @include mq{
             margin-bottom: $spacing-pc-sm;
             display: flex;
             justify-content: center;
             gap: rem(16);
+            font-size: rem(14);
         }
         &-block{
             width: 100%;
-            padding: rem(5) rem(10);
+            padding: rem(10) rem(10);
             background-color: $color-theme-sub;
             border-radius: 5px;
             @include mq{
@@ -85,14 +91,29 @@
                 font-size: rem(20);
             }
         }
+        &-list{
+            display: grid;
+            grid-template-columns: max-content 1fr;
+        }
+        &-item{
+            display: grid;
+            grid-column: 1/-1;
+            grid-template-columns: subgrid;
+            .title{
+                text-align: right;
+                font-weight: 500;
+                &::after{
+                    content: "：";
+                }
+            }
+        }
     }
     &__history{
         margin-inline: auto;
-        width: 100%;
+        width: fit-content;
         margin-bottom: $spacing-sp-sm;
         @include mq{
             margin-bottom: $spacing-pc-sm;
-            max-width: 640px;
         }
         &-title{
             cursor: pointer;
@@ -123,22 +144,14 @@
             }
         }
         &-list{
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: .3em 3%;
             background-color: #fff;
             padding: rem(10);
         }
         &-term{
-            display: inline-block;
-            vertical-align: top;
-            width: 20%;
-            margin-right: 3%;
             text-align: right;
-            &:not(:last-child){
-                margin-bottom: rem(8);
-            }
-        }
-        &-desc{
-            display: inline-block;
-            width: 75%;
         }
     }
 }
