@@ -1,7 +1,8 @@
 @use '../base/variables' as *;
 
 // もっと見るボタン
-.c-btn-more{
+.c-btn-more,
+.c-btn-top{
     position: relative;
     display: block;
     width: 160px;

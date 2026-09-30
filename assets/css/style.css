@@ -80,7 +80,8 @@ img {
   }
 }
 
-.c-btn-more {
+.c-btn-more,
+.c-btn-top {
   position: relative;
   display: block;
   width: 160px;
@@ -94,12 +95,14 @@ img {
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 @media (min-width: 768px) {
-  .c-btn-more {
+  .c-btn-more,
+  .c-btn-top {
     width: 220px;
     padding: 16px;
   }
 }
-.c-btn-more::after {
+.c-btn-more::after,
+.c-btn-top::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -110,7 +113,8 @@ img {
   border-right: 1px solid #fff;
   rotate: 45deg;
 }
-.c-btn-more:hover {
+.c-btn-more:hover,
+.c-btn-top:hover {
   background-color: #fdfcf8;
   border-color: #778da9;
   color: #778da9;
@@ -1156,6 +1160,43 @@ img {
 }
 .p-single-works__btn {
   border-radius: 15px;
+}
+
+.p-thanks .l-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media (min-width: 768px) {
+  .p-thanks .l-inner {
+    gap: 80px;
+  }
+}
+.p-thanks__title {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .p-thanks__title {
+    font-size: 2.5rem;
+  }
+}
+.p-thanks__note {
+  color: #777;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .p-thanks__note {
+    font-size: 0.875rem;
+  }
+}
+.p-thanks__btn {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .p-thanks__btn {
+    width: 250px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
