@@ -40,7 +40,7 @@
 // コンタクトフォームへのボタン
 .c-btn-contact{
     position: relative;
-    width: 300px;
+    width: min(300px, 100%);
     height: 64px;
     line-height: 64px;
     background-color: $color-theme-accent;
