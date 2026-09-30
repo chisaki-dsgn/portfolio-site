@@ -59,15 +59,18 @@
     }
     &__ability{
         margin-bottom: $spacing-sp-sm;
+        font-size: rem(12);
+        line-height: $line-height-wide;
         @include mq{
             margin-bottom: $spacing-pc-sm;
             display: flex;
             justify-content: center;
             gap: rem(16);
+            font-size: rem(14);
         }
         &-block{
             width: 100%;
-            padding: rem(5) rem(10);
+            padding: rem(10) rem(10);
             background-color: $color-theme-sub;
             border-radius: 5px;
             @include mq{
@@ -88,27 +91,29 @@
                 font-size: rem(20);
             }
         }
+        &-list{
+            display: grid;
+            grid-template-columns: max-content 1fr;
+        }
         &-item{
-            display: flex;
+            display: grid;
+            grid-column: 1/-1;
+            grid-template-columns: subgrid;
             .title{
-                flex-shrink: 0;
+                text-align: right;
                 font-weight: 500;
                 &::after{
                     content: "：";
                 }
             }
-            .detail{
-                flex: 1;
-            }
         }
     }
     &__history{
         margin-inline: auto;
-        width: 100%;
+        width: fit-content;
         margin-bottom: $spacing-sp-sm;
         @include mq{
             margin-bottom: $spacing-pc-sm;
-            max-width: 640px;
         }
         &-title{
             cursor: pointer;
@@ -139,22 +144,14 @@
             }
         }
         &-list{
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: .3em 3%;
             background-color: #fff;
             padding: rem(10);
         }
         &-term{
-            display: inline-block;
-            vertical-align: top;
-            width: 30%;
-            margin-right: 1%;
             text-align: right;
-            &:not(:last-child){
-                margin-bottom: rem(8);
-            }
-        }
-        &-desc{
-            display: inline-block;
-            width: 67%;
         }
     }
 }
