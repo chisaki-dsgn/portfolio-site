@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+
+.p-thanks{
+    .l-inner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sp-md;
+        @include mq{
+            gap: $spacing-pc-md;
+        }
+    }
+    &__title{
+        font-size: rem(24);
+        @include mq{
+            font-size: rem(40);
+        }
+    }
+    &__note{
+        color: $color-text-sub;
+        font-size: rem(12);
+        @include mq{
+            font-size: rem(14);
+        }
+    }
+    &__btn{
+        width: 200px;
+        @include mq{
+            width: 250px;
+        }
+    }
+}
