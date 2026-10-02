@@ -302,7 +302,7 @@ img {
     width: 30%;
   }
 }
-.l-footer__contact-x {
+.l-footer__contact-x, .l-footer__contact-github {
   display: flex;
   width: fit-content;
   gap: 10px;
