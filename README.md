@@ -38,6 +38,7 @@ Webコーダー千咲のポートフォリオサイトです。
 - **Git / GitHub**：チーム開発を視野に入れたブランチ運用・リポジトリ管理の流れを体験（push / pull request / merge / pull）
 - **Figma**：デザインの作成
 - **GitHub Pages** (ホスティング)
+- **GA4 / GTM**:サイト分析・CVボタンのクリック計測
 
 ## 制作時の工夫点
 - 採用担当者の方がサイトを見ただけで時間をかけずにどんな作品かをできるだけわかりやすくするため、詳細ページにサイトのキャプチャ画像を使ったスクロール可能なセクションを作成しました。
@@ -46,6 +47,7 @@ Webコーダー千咲のポートフォリオサイトです。
 - 実務を想定した**Git管理**を意識して制作に取り組み、実務でのチーム開発のフローに近づけるようにしました。PRにはできるだけ画像を添えるようにし、確認者がどんな実装がされたのかを一目で理解できるように心がけました。
 - UX向上のためボタンやカードホバー時の自然なアニメーションを設定し、ユーザーが直感的に操作できるよう工夫しました。
 - 使用する画像はすべて圧縮ツールを使いファイルサイズを小さくすることで表示速度の向上に努めました。
+- GA4・GTMを導入し、サイトのアクセス分析・改善ができるようにしました。
 
 ## ディレクトリ構造
 
@@ -57,12 +59,13 @@ portfolio-site/
 │  page-about.html
 │  page-contact.html
 │  page-privacy.html
-│  README.md
 │  single-works-cafe-wp.html
 │  single-works-cafe.html
 │  single-works-portfolio.html
 │  single-works-vocal.html
 │  thanks.html
+│  README.md
+|  .gitignore
 │  
 └─assets
     ├─css
