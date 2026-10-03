@@ -6,10 +6,10 @@
         height: calc(100dvh - 70px - env(safe-area-inset-top));
         position: relative;
         background-color: $color-theme-sub;
-        background: url("../img/mv-image-sp.png") no-repeat center / cover;
+        background: url("../img/mv-image-sp.webp") no-repeat center / cover;
         @include mq{
             height: calc(100dvh - 80px - env(safe-area-inset-top));
-            background: url("../img/mv-image-pc.png") no-repeat center / cover;
+            background: url("../img/mv-image-pc.webp") no-repeat center / cover;
         }
     }
     &__title{
